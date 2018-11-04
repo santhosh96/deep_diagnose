@@ -1,0 +1,17 @@
+
+table.dataframe, .dataframe th, .dataframe td {
+  border: 2px solid black;
+  border-collapse: collapse;
+  text-align:center;
+  padding: 10px;
+}
+
+table {
+    width: 100%;
+}
+
+
+tr:nth-child(odd)		{ background-color:white; }
+tr:nth-child(even)	{ background-color:white; }
+
+tr:hover            { background-color: #ffff99;}

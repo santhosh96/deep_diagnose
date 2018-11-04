@@ -1,0 +1,37 @@
+.jumbotron {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    background: #da9f9f;
+}
+.w3-animate-fading {
+    animation-duration: 0s;
+    animation-iteration-count: 1;
+}
+.icons {
+    position: absolute;
+}
+.head1 {
+    font-size: 35px;
+}
+h1 {
+        font-family: Consolas, monaco, monospace;
+        font-size: 40px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 650;
+        line-height: 26.4px;
+        padding-top: 15px;
+        color: #a54040;
+    }
+
+body {
+    background-color: white;
+}
+
+.card {
+    border: solid 1px;
+}
+
+.modal-open[style] {
+    padding-right: 0px !important;
+}
