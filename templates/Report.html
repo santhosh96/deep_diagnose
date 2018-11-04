@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Deep_Diagnose</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<script src="https://www.w3schools.com/lib/w3.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+	<script src="{{ url_for('static', filename='imageupload.js') }}"></script>
+	<link rel="stylesheet" href="{{ url_for('static', filename='customize_r.css')}}">
+	<style media="all">
+		table, th, td {
+		    border: 2px solid black;
+		    border-collapse: collapse;
+			padding: 10px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="jumbotron jumbotron-fluid">
+		<div class="container w3-animate-opacity">
+			<div class="container w3-animate-right c1">
+				<a href="https://www.somaiya.edu/kjsmc"><img src="{{ url_for('static', filename='Images/kjsmc.jpeg')}}" class = "rounded float-right" height="70" width="70" hspace="10"></a>
+				<a href="https://www.somaiya.edu/kjsieit/"><img src="{{ url_for('static', filename='Images/SomaiyaTrust.jpg')}}" class = "rounded float-right" height="70" width="70" hspace="10"></a>
+				<img src="{{ url_for('static', filename='Images/trust.jpg')}}" class = "rounded float-right" height="70" width="70" hspace="10">
+			</div>
+	    	<h1>Deep_diagnose</h1>
+	    	<div class="container w3-animate-left">
+	    		<p><i>An automated and efficient way for diagnosis</i></p>
+	    	</div>
+	    </div>
+	</div>
+
+	<div class="container">
+		<h3><u>Report of diagnosis</u></h3><br>
+		<div class="report">
+			<table style="width:100%">
+				<tr>
+					<td style="width:180px"><b>Patient Name:</b></td>
+					<td>{{name}}</td>
+					<td style="text-align:center; width:250px"><b>Medications</b></td>
+				</tr>
+				 <!-- rowspan="5" -->
+				<tr>
+					<td><b>Date of Diagnosis:</b></td>
+					<td>{{date}}</td>
+					<td rowspan="3" style="vertical-align: center;" >
+						<ul style="list-style-type:none;">
+							<li><input type="checkbox">  Itraconzole</li>
+							<li><input type="checkbox">  Terbinafine</li>
+							<li><input type="checkbox">  Griseofulvin</li>
+							<li><input type="checkbox">  Sertoconazole</li>
+							<li><input type="checkbox">  Luliconazole</li>
+							<li><input type="checkbox">  Clotrimazole</li>
+							<li><input type="checkbox">  Antihistaminic</li>
+						</ul>
+						<br>
+					</td>
+				</tr>
+				<tr>
+					<td><b>Time of Diagnosis:</b></td>
+					<td>{{time}}</td>
+				</tr>
+				<tr>
+					<td><b>Result of Diagnosis:</b></td>
+					<td>{{result}}</td>
+				</tr>
+
+			</table><br>
+			<button class="btn btn-success" id="printpagebutton" onclick="printpage()" style="float:right">Print</button>
+			<form action="/home" method="get">
+				<input type="submit" id="homebutton" class="form-control btn btn-info col-sm-2" value="Return to Home">
+			</form>
+		</div>
+	</div>
+	<script>
+		function printpage() {
+			//Get the print button and put it into a variable
+			var printButton = document.getElementById("printpagebutton");
+			var homebutton = document.getElementById("homebutton");
+			//Set the print button visibility to 'hidden'
+			printButton.style.visibility = 'hidden';
+			homebutton.style.visibility = 'hidden';
+
+			//Print the page content
+			window.print()
+			//Set the print button to 'visible' again
+			//[Delete this line if you want it to stay hidden after printing]
+			printButton.style.visibility = 'visible';
+			homebutton.style.visibility = 'visible';
+		}
+	</script>
+</body>

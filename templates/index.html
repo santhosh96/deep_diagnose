@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Deep_Diagnose</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<script src="https://www.w3schools.com/lib/w3.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+	<script src="{{ url_for('static', filename='imageupload.js') }}"></script>
+	<link rel="stylesheet" href="{{ url_for('static', filename='customize.css')}}">
+</head>
+
+<body>
+	<div class="jumbotron jumbotron-fluid">
+		<div class="container w3-animate-opacity">
+			<div class="container w3-animate-right c1">
+				<a href="https://www.somaiya.edu/kjsmc"><img src="{{ url_for('static', filename='Images/kjsmc.jpeg')}}" class = "rounded float-right" height="70" width="70" hspace="10"></a>
+				<a href="https://www.somaiya.edu/kjsieit/"><img src="{{ url_for('static', filename='Images/SomaiyaTrust.jpg')}}" class = "rounded float-right" height="70" width="70" hspace="10"></a>
+				<img src="{{ url_for('static', filename='Images/trust.jpg')}}" class = "rounded float-right" height="70" width="70" hspace="10">
+			</div>
+	    	<h1>Deep_diagnose</h1>
+	    	<div class="container w3-animate-left">
+	    		<p><i>An automated and efficient way for diagnosis</i></p>
+	    	</div>
+	    </div>
+	</div>
+
+	<div class="container" id="body1">
+		<div class="alert alert-info w3-animate-left">
+	  		<strong>Instructions</strong> for working with the software.
+		</div>
+
+		<div class="row">
+		    <div class="col-sm-3">
+		        <div class="card w3-animate-zoom">
+		            <img class="card-img-top" src="{{ url_for('static', filename='Images/step1.jpg')}}" alt="Card image" class="img-responsive">
+		            <div class="card-body">
+		                <h4 class="card-title"><b>Physical Examination</b></h4>
+		                <p class="card-text">Initial steps of skin scrappings and other medical procedures.</p>
+		                <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#step1">View more</a>
+		            </div>
+		        </div>
+		    </div>
+
+		    <div class="col-sm-3">
+		        <div class="card w3-animate-zoom">
+		            <img class="card-img-top" src="{{ url_for('static', filename='Images/step2.jpg')}}" alt="Card image" class="img-responsive">
+		            <div class="card-body">
+		                <h4 class="card-title"><b>Image Capturing</b></h4>
+		                <p class="card-text">Microscopic observation and image capturing of the specimens.</p>
+		                <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#step2">View more</a>
+		            </div>
+		        </div>
+		    </div>
+
+		    <div class="col-sm-3">
+		        <div class="card w3-animate-zoom">
+		            <img class="card-img-top" src="{{ url_for('static', filename='Images/step3.jpg')}}" alt="Card image" class="img-responsive">
+		            <div class="card-body">
+		                <h4 class="card-title"><b>Image Processing</b></h4>
+		                <p class="card-text">Uploading the captured image to the algorithm for detection.</p>
+		                <button type="button" class="btn btn-success btn-block" data-toggle="modal" data-target="#step3">Upload Image</a>
+		            </div>
+		        </div>
+		    </div>
+
+		    <div class="col-sm-3">
+		        <div class="card w3-animate-zoom">
+		            <img class="card-img-top" src="{{ url_for('static', filename='Images/step4.jpg')}}" alt="Card image" class="img-responsive">
+		            <div class="card-body">
+		                <h4 class="card-title"><b>View Statistics</b></h4>
+		                <p class="card-text">Statistics of the diagnosis performed by the algorithm for the specimens.</p>
+						<form action="/table" method="get">
+							<input type="submit" class="form-control btn btn-success" value="View Statistics">
+						</form>
+					</div>
+		        </div>
+		    </div>
+		</div>
+
+		<br>
+
+		<div class="modal fade" id="step1">
+		  	<div class="modal-dialog modal-lg">
+		    	<div class="modal-content">
+					<div class="modal-header">
+						<h3 class="modal-title">Physical Examination</h3>
+					</div>
+
+					<div class="modal-body">
+						<h4>Steps for medical procedures</h4>
+						<ul>
+							<li>Scraping of diseased region using blunt tool (slide).</li>
+							<li>Introducing <b>1 drop</b> of <b>10% KOH</b> to the slide.</li>
+							<li>Introducing <b>2 drops</b> of <b>1% CSB (Chicago Sky Blue)</b> stain.</li>
+							<li>Cover the slide using the cover slip and wait for 15 minutes.</li>
+						</ul>
+					</div>
+
+					<div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+					</div>
+		    	</div>
+		  	</div>
+		</div>
+
+		<div class="modal fade" id="step2">
+		  	<div class="modal-dialog modal-lg">
+		    	<div class="modal-content">
+
+					<div class="modal-header">
+						<h3 class="modal-title">Image Capturing</h3>
+					</div>
+
+					<div class="modal-body">
+						<h4>Observing under the microscope</h4>
+						<ul>
+							<li>Once the specimen is ready for observation, carefully place the slide onto the observation tray of microscope.</li>
+							<li>Set/Install magnification to <b>40X.</b></li>
+							<li>Locate the areas that shows <b>Spores</b> and <b>Hyphae</b>.</li>
+							<li>Once located, capture the image using smartphone camera using camera mount.</li>
+						</ul>
+					</div>
+
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+					</div>
+		    	</div>
+		  	</div>
+		</div>
+
+		<div class="modal fade" id="step3">
+		  	<div class="modal-dialog modal-lg">
+		    	<div class="modal-content">
+					<!-- Modal Header -->
+					<div class="modal-header">
+						<h3 class="modal-title">Upload Image</h3>
+					</div>
+
+					<!-- Modal body -->
+					<div class="modal-body">
+						<h4>Please Click the below browse button to insert the image from file browser</h4>
+						<ul style="color: blue">
+							<li>Rename the image with patient's name without any special characters</li>
+							<li>Correct naming : <span style="color:green">John.jpg</span> <p>Wrong naming : <span style="color:red">Jo.hn.jpg</span></p></li>
+							<li>Please select image files only having extension of .jpeg or .jpg</li>
+							<li>The image should be renamed with patient's name</li>
+							<li>The size of the image should not be more than 5 Mb</li>
+						</ul>
+		                <form id="fileUploadForm" method="post" enctype="multipart/form-data" action="/upload"><br>
+		                    <div class="form-group">
+		                        <!-- <div class="row">
+		                            <div class="col-sm-6"><input type='file' class="form-control" onchange="readURL(this);"/></div>
+		                            <div class="col-sm-1"></div>
+		                            <div class="col-sm-5"><img id="blah" src="#" alt="selected image would appear here"/></div>
+		                        </div><br> -->
+             					<div class="row">
+									<div class="col-sm-6">
+										<input type="file" onchange="readURL(this);" name="image"/>
+									</div>
+									<img id="blah" src="http://placehold.it/180" alt="your image" width="180" style="float: right"/>
+              						<div class="col-sm-10"></div>
+				                  	<div class="col-sm-2">
+				                      	<input type="submit" class="form-control btn btn-success" value="Upload">
+									</div>
+          						</div>
+          					</div>
+		                </form>
+					</div>
+
+					<!-- Modal footer -->
+					<div class="modal-footer">
+					<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+		  	</div>
+		</div>
+		{% if show_example_modal %}
+			<script>window.alert("Image uploaded successfully")</script>
+		{% endif %}
+	</div>
+</body>
+</html>

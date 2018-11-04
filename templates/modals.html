@@ -1,0 +1,81 @@
+<div class="modal fade" id="step1">
+  	<div class="modal-dialog">
+    	<div class="modal-content">
+			<!-- Modal Header -->
+			<div class="modal-header">
+				<h3 class="modal-title">Physical Examination</h3>
+			</div>
+			<!-- Modal body -->
+			<div class="modal-body">
+			Modal body..
+			</div>
+
+			<!-- Modal footer -->
+			<div class="modal-footer">
+			<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+			</div>
+    	</div>
+  	</div>
+</div>
+
+<div class="modal fade" id="step2">
+  	<div class="modal-dialog">
+    	<div class="modal-content">
+			<!-- Modal Header -->
+			<div class="modal-header">
+				<h3 class="modal-title">Image Capturing</h3>
+			</div>
+
+			<!-- Modal body -->
+			<div class="modal-body">
+			Modal body..
+			</div>
+
+			<!-- Modal footer -->
+			<div class="modal-footer">
+			<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+			</div>
+    	</div>
+  	</div>
+</div>
+
+<div class="modal fade" id="step3">
+  	<div class="modal-dialog modal-lg">
+    	<div class="modal-content">
+			<!-- Modal Header -->
+			<div class="modal-header">
+				<h3 class="modal-title">Upload Image</h3>
+			</div>
+
+			<!-- Modal body -->
+			<div class="modal-body">
+                <form id="fileUploadForm" method="post" enctype="multipart/form-data">
+                    <h4>Please Click the below browse button to insert the image from file browser</h3>
+                    <ul style="color: blue">
+                        <li>Please select image files only having extension of .jpeg or .jpg</li>
+                        <li>The image should be renamed with patient's name</li>
+                        <li>The size of the image should not be more than 5 Mb</li>
+                    </ul>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-6"><input type='file' class="form-control" onchange="readURL(this);"/></div>
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-5"><img id="blah" src="#" alt="selected image would appear here"/></div>
+                        </div><br>
+                        <div class="row">
+                            <div class="col-sm-10"></div>
+                            <div class="col-sm-2">
+                                <input type="submit" class="form-control btn btn-success" id="btnSubmit" value="Upload">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+			</div>
+
+			<!-- Modal footer -->
+			<div class="modal-footer">
+			<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+			</div>
+    	</div>
+  	</div>
+</div>

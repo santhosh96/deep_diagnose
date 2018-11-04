@@ -1,0 +1,48 @@
+<!doctype html>
+<head>
+    <title>Deep_Diagnose</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <script src="{{ url_for('static', filename='imageupload.js') }}"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='customize.css')}}">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+		<div class="container w3-animate-opacity">
+			<div class="container w3-animate-right c1">
+				<a href="https://www.somaiya.edu/kjsmc"><img src="{{ url_for('static', filename='Images/kjsmc.jpeg')}}" class = "rounded float-right" height="70" width="70" hspace="10"></a>
+				<a href="https://www.somaiya.edu/kjsieit/"><img src="{{ url_for('static', filename='Images/SomaiyaTrust.jpg')}}" class = "rounded float-right" height="70" width="70" hspace="10"></a>
+				<img src="{{ url_for('static', filename='Images/trust.jpg')}}" class = "rounded float-right" height="70" width="70" hspace="10">
+			</div>
+	    	<h1>Deep_diagnose</h1>
+	    	<div class="container w3-animate-left">
+	    		<p><i>An automated and efficient way for diagnosis</i></p>
+	    	</div>
+	    </div>
+	</div>
+
+    <div class="container">
+        <!--
+        <a href="pie_graph"><strong>Click Here for More Stats</strong></a>-->
+          <div class="alert alert-info w3-animate-left">
+	  		     Statistics of diagnosis conducted.</div><br>
+          <div class="w3w3w3-animate-right">
+            {% for table in tables %}
+              {{ table|safe }}
+            {% endfor %}
+          </div><br><br>
+        <form action="/home" method="get">
+          <input type="submit" class="form-control btn btn-info col-sm-2" value="Return to Home">
+        </form>
+        <br><br>
+    </div>
+
+</body>
