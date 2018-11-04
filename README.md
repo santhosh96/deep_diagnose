@@ -1,6 +1,6 @@
 ## Deep_Diagnose: Detection of Micro-organisms of Tinea using Deep Learning
 
-![Logo](https://github.com/dhruvp-8/aura-player/blob/master/screenshots/Logo.png "Logo")
+![Logo](https://github.com/santhosh96/deep_diagnose/blob/master/logo.png "Logo")
 
 Creators:
 
