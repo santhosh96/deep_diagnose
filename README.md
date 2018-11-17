@@ -27,12 +27,17 @@ Our project basically aims at designing an algorithm, that would basically assis
 
 ## System flow
 
-![System Flow](https://github.com/santhosh96/deep_diagnose/blob/master/static/Images/Flow.png "Logo")
+![System Flow](https://github.com/santhosh96/deep_diagnose/blob/master/static/Images/Flow.png "SystemFlow")
 
 ## Output
 
+![Homescreen](https://github.com/santhosh96/deep_diagnose/blob/master/static/Images/Homescreen.png "HomeScreen")
 
-## Running the tests
+![Physical](https://github.com/santhosh96/deep_diagnose/blob/master/static/Images/Physical.png "Physical")
 
+![ImgCapture](https://github.com/santhosh96/deep_diagnose/blob/master/static/Images/ImgCapture.png "ImgCapture")
 
-## Acknowledgments
+![ImgUpload](https://github.com/santhosh96/deep_diagnose/blob/master/static/Images/ImgUpload.png "ImgUpload")
+
+![Report](https://github.com/santhosh96/deep_diagnose/blob/master/static/Images/Report.png "Report")
+
