@@ -25,8 +25,9 @@ Medical Science has various other sub branches; one such field of medical scienc
 
 Our project basically aims at designing an algorithm, that would basically assist the process in two ways. Firstly, it would predict the presence of the diseases in the specimen in very less amount of time. And secondly, this would assist the doctors, in detection and diagnosis of the diseases, without requiring their presence for each and every case of Tinea being encountered.
 
-## Modules
+## System flow
 
+![System Flow](https://github.com/santhosh96/deep_diagnose/blob/master/static/Images/Flow.png "Logo")
 
 ## Output
 
