@@ -36,15 +36,7 @@ Our project basically aims at designing an algorithm, that would basically assis
 ![Physical](https://github.com/santhosh96/deep_diagnose/blob/master/static/Images/Physical.png "Physical")
 
 ![ImgCapture](https://github.com/santhosh96/deep_diagnose/blob/master/static/Images/ImgCapture.png "ImgCapture")
-<<<<<<< HEAD
 
 ![ImgUpload](https://github.com/santhosh96/deep_diagnose/blob/master/static/Images/ImgUpload.png "ImgUpload")
 
 ![Report](https://github.com/santhosh96/deep_diagnose/blob/master/static/Images/Report.png "Report")
-
-=======
-
-![ImgUpload](https://github.com/santhosh96/deep_diagnose/blob/master/static/Images/ImgUpload.png "ImgUpload")
-
-![Report](https://github.com/santhosh96/deep_diagnose/blob/master/static/Images/Report.png "Report")
->>>>>>> 6136bd627e2fd8ac01e7809eb34c3f4e134c0a97
