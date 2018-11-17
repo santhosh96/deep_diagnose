@@ -32,6 +32,7 @@ Our project basically aims at designing an algorithm, that would basically assis
 ## Output
 <p align="center">
 	<img src="https://github.com/santhosh96/deep_diagnose/blob/master/static/Images/Homescreen.png">
+	<p>Homescreen</p>
 	<img src="https://github.com/santhosh96/deep_diagnose/blob/master/static/Images/Physical.png">
 	<img src="https://github.com/santhosh96/deep_diagnose/blob/master/static/Images/ImgCapture.png">
 	<img src="https://github.com/santhosh96/deep_diagnose/blob/master/static/Images/ImgUpload.png">
