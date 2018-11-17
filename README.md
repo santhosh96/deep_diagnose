@@ -28,13 +28,3 @@ Our project basically aims at designing an algorithm, that would basically assis
 ## System flow
 
 ![System Flow](https://github.com/santhosh96/deep_diagnose/blob/master/static/Images/Flow.png "SystemFlow")
-
-## Output
-<p align="center">
-	<img src="https://github.com/santhosh96/deep_diagnose/blob/master/static/Images/Homescreen.png">
-	<p style="text-align: center;"><b>Fig: Homescreen</b></p>
-	<img src="https://github.com/santhosh96/deep_diagnose/blob/master/static/Images/Physical.png">
-	<img src="https://github.com/santhosh96/deep_diagnose/blob/master/static/Images/ImgCapture.png">
-	<img src="https://github.com/santhosh96/deep_diagnose/blob/master/static/Images/ImgUpload.png">
-	<img src="https://github.com/santhosh96/deep_diagnose/blob/master/static/Images/Report.png">
-</p>
