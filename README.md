@@ -30,13 +30,10 @@ Our project basically aims at designing an algorithm, that would basically assis
 ![System Flow](https://github.com/santhosh96/deep_diagnose/blob/master/static/Images/Flow.png "SystemFlow")
 
 ## Output
-
-![Homescreen](https://github.com/santhosh96/deep_diagnose/blob/master/static/Images/Homescreen.png "HomeScreen")
-
-![Physical](https://github.com/santhosh96/deep_diagnose/blob/master/static/Images/Physical.png "Physical")
-
-![ImgCapture](https://github.com/santhosh96/deep_diagnose/blob/master/static/Images/ImgCapture.png "ImgCapture")
-
-![ImgUpload](https://github.com/santhosh96/deep_diagnose/blob/master/static/Images/ImgUpload.png "ImgUpload")
-
-![Report](https://github.com/santhosh96/deep_diagnose/blob/master/static/Images/Report.png "Report")
+<p align="center">
+	<img src="https://github.com/santhosh96/deep_diagnose/blob/master/static/Images/Homescreen.png">
+	<img src="https://github.com/santhosh96/deep_diagnose/blob/master/static/Images/Physical.png">
+	<img src="https://github.com/santhosh96/deep_diagnose/blob/master/static/Images/ImgCapture.png">
+	<img src="https://github.com/santhosh96/deep_diagnose/blob/master/static/Images/ImgUpload.png">
+	<img src="https://github.com/santhosh96/deep_diagnose/blob/master/static/Images/Report.png">
+</p>
