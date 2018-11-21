@@ -37,7 +37,7 @@ def predict(crop_img):
     x = np.expand_dims(x, axis=0)
     x = preprocess_input(x)
     with graph.as_default():
-            preds = model.predict(x)
+        preds = model.predict(x)
     return preds[0]
 
 @app.route('/upload', methods=['POST'])
@@ -67,7 +67,6 @@ def upload_file():
             half_the_height + 1000
         )
     )
-    cropped_image.save(file.filename)
     crop_img = cropped_image.resize((299,299))
 
     prediction = predict(crop_img)
@@ -81,7 +80,12 @@ def upload_file():
     df = pd.read_excel('./data/stats.xlsx')
     df.loc[len(df.index)] = [name_r, date, Time, pred_class]
     df.to_excel('./data/stats.xlsx')
-    return render_template('Report.html', name=name_r, date=date, time=Time, result=pred_class)
+
+    if pred_class == 'positive':
+        return render_template('Report.html', name=name_r, date=date, time=Time, result='Positive')
+
+    else:
+        return render_template('Report_neg.html', name=name_r, date=date, time=Time, result='Negative')
 
 # @app.route('/plots')
 @app.route("/table", methods=['GET'])
