@@ -2,11 +2,9 @@
 
 ![Logo](https://github.com/santhosh96/deep_diagnose/blob/master/logo.png "Logo")
 
-## Creators and Contributors:
-
 ### Patent details: http://ipindiaservices.gov.in/PatentSearch/PatentSearch//ViewApplicationStatus?AppNumber=189t86mzLtiGJuuEcL1YHQ==
 
-## Creators:
+## Creators and Contributors:
 
 1. Santhosh Narayanan: https://www.linkedin.com/in/santhosh1634/
 2. Dhaval Thakkar: https://www.linkedin.com/in/dhaval-thakkar-dt/
