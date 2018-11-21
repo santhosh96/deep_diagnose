@@ -47,4 +47,8 @@ Our project basically aims at designing an algorithm, that would basically assis
 
 Recommended to create a virtual environment of <b>Python 3.5</b>
 
+1. Install the dependencies from <b>requirements.txt</b>
+   
+   Run '''pip install -r requirements.txt'''
+
 
