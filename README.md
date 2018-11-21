@@ -28,3 +28,20 @@ Our project basically aims at designing an algorithm, that would basically assis
 ## System flow
 
 ![System Flow](https://github.com/santhosh96/deep_diagnose/blob/master/static/Images/Flow.png "SystemFlow")
+
+## Running the System
+
+Dependencies:
+
+* Flask==1.0.2
+* Keras==2.2.4
+* matplotlib==3.0.2
+* numpy==1.15.4
+* openpyxl==2.5.11
+* pandas==0.23.4
+* Pillow==5.3.0
+* pygal==2.4.0
+* requests==2.20.1
+* tensorflow==1.12.0
+* xlrd==1.1.0
+
