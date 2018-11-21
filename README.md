@@ -31,7 +31,7 @@ Our project basically aims at designing an algorithm, that would basically assis
 
 ## Running the System
 
-Dependencies:
+###Dependencies:
 
 * Flask==1.0.2
 * Keras==2.2.4
@@ -44,4 +44,8 @@ Dependencies:
 * requests==2.20.1
 * tensorflow==1.12.0
 * xlrd==1.1.0
+
+####Recommended to create a virtual environment of Python 3.5
+
+
 
