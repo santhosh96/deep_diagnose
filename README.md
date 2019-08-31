@@ -2,8 +2,6 @@
 
 ![Logo](https://github.com/santhosh96/deep_diagnose/blob/master/logo.png "Logo")
 
-### Patent details: http://ipindiaservices.gov.in/PatentSearch/PatentSearch//ViewApplicationStatus?AppNumber=189t86mzLtiGJuuEcL1YHQ==
-
 ## Creators and Contributors:
 
 1. Santhosh Narayanan: https://www.linkedin.com/in/santhosh1634/
